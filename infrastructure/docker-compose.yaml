@@ -22,5 +22,9 @@ services:
       - edhmm-db:/data
     ports:
       - "5000:5000"
+  osrs:
+    image: ghcr.io/hampuslundblad/osrs-dry-tracker:main
+    ports:
+      - "3001:3001"
 volumes:
   edhmm-db:
